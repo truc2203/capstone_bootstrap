@@ -13,7 +13,9 @@ body {
   max-width: 1520px;
   margin: auto;
 }
-
+.cover{
+  padding: 0 120px;
+}
 .sub-nav {
   margin: 0;
 }
