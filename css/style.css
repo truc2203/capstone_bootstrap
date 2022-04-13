@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  height: 5000px;
+}
 .container {
   max-width: 1520px;
   margin: auto;
@@ -13,6 +16,9 @@ html {
 
 .sub-nav{
   margin: 0;
+}
+.sub-nav a{
+  text-decoration: none;
 }
 .sub-nav .container{
   display: flex;
@@ -31,7 +37,7 @@ html {
   color: #f05196;
  transition: all 0.5s;
 }
-.sub-nav span:hover i{
+.sub-nav span:hover .hover-none{
   color: #ffffff;
 }
 .sub-nav .contact i{
@@ -43,6 +49,50 @@ html {
   padding-left: 30px;
 }
 .sub-nav .icon i:hover{
-  color: #f05196;
+  color: #ff7971;
   transition: all 0.5s;
+}
+.navbar{
+  /* position: fixed;
+  width: 100%; */
+}
+.navbar-collapse{
+  justify-content: end;
+}
+.navbar-brand{
+  font-size: 30px;
+  font-weight: 600;
+  color: #0d369f;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar-brand:hover{
+  color: #ff7971;
+  transition: all 0.3s;
+}
+.nav-item{
+  padding: 0 16px;
+}
+.nav-link{
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+.nav-link:hover{
+  color: #ff7971;
+  transition: all 0.3s;
+
+}
+.nav-link:focus{
+  color: #ff7971;
+}
+.d-flex i{
+  font-size: 16px;
+  line-height: 44px;
+  position: absolute;
+  right: 2%;
+}
+.d-flex i:hover{
+  color: #ff7971;
+  transition: all 0.3s;
 }
