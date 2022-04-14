@@ -21,45 +21,47 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="sub-nav">
-        <div class="container">
-          <div class="contact">
-            <a href="#">
-              <span
-                >Have any question ? 
-              </span>
-            </a>
-            <a href="#">
-              <span
-                ><i class="hover-none fa-solid fa-envelope"></i>mail.exam@gmail.com</span
-              >
-            </a>
-            <a href="#">
-              <span><i class="hover-none fa-solid fa-phone"></i> +123456789</span>
-            </a>
-          </div>
-          <div class="icon">
-            <a href="#">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
+    <!-- Sub-nav -->
+    <section class="sub-nav">
+      <div class="container">
+        <div class="contact">
+          <a href="#">
+            <span>Have any question ? </span>
+          </a>
+          <a href="#">
+            <span
+              ><i class="hover-none fa-solid fa-envelope"></i
+              >mail.exam@gmail.com</span
+            >
+          </a>
+          <a href="#">
+            <span><i class="hover-none fa-solid fa-phone"></i> +123456789</span>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg ">
+    </section>
+    <!-- Navbar -->
+    <header id="header" class="fixed-top nav-fixed">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./img/logo.png" alt="">
-            Studious</a>
+            <img src="./img/logo.png" alt="" />
+            Studious</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -110,20 +112,113 @@
                 <a class="nav-link" href="#">CONTACT US</a>
               </li>
               <form class="d-flex">
-                <input class="rounded-pill form-control me-2" type="search" placeholder="Enter keyword" aria-label="Search">
-                <i class="fa-solid fa-magnifying-glass"></i>   
-                    
-               </form>
-               <i class="night-mode fa-solid fa-moon"></i>   
-               <!-- <i class="change-mode night-mode  fa-solid fa-sun"></i> -->
+                <input
+                  class="rounded-pill form-control me-2"
+                  type="search"
+                  placeholder="Enter keyword"
+                  aria-label="Search"
+                />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+              <i class="night-mode fa-solid fa-moon"></i>
+              <!-- <i class="change-mode night-mode  fa-solid fa-sun"></i> -->
             </ul>
           </div>
         </div>
       </nav>
     </header>
+    <!-- Carousel -->
+    
+    <!-- Footer -->
     <footer class="footer">
       <div class="cover">
-        
+        <div class="d-flex bd-highlight">
+          <div class="col-lg-2 col-sm-6 pe-3 bd-highlight">
+            <p>QUICK LINKS</p>
+            <a href="#">
+              <span><i class="fa-solid fa-angles-right"></i>Home</span>
+            </a>
+            <a href="#">
+              <span><i class="fa-solid fa-angles-right"></i>About</span>
+            </a>
+            <a href="#">
+              <span><i class="fa-solid fa-angles-right"></i>Course</span>
+            </a>
+            <a href="#">
+              <span><i class="fa-solid fa-angles-right"></i>Contact</span>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 ps-lg-5 pe-4 mt-sm-0 mt-4 bd-highlight">
+            <p>HELP & SUPPORT</p>
+            <a href="#">
+              <span><i class="fa-solid fa-angles-right"></i>Live Chart</span>
+            </a>
+            <a href="#">
+              <span><i class="fa-solid fa-angles-right"></i>Faq</span>
+            </a>
+            <a href="#">
+              <span><i class="fa-solid fa-angles-right"></i>Support</span>
+            </a>
+            <a href="#">
+              <span
+                ><i class="fa-solid fa-angles-right"></i>Term of Service</span
+              >
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 pe-4 mt-lg-0 mt-sm-5 mt-4 bd-highlight">
+            <p>CONTACT</p>
+            <a href="#">
+              <span
+                ><i class="contact-i fa-solid fa-envelope"></i
+                >info@exam.com</span
+              >
+            </a>
+            <a href="#">
+              <span
+                ><i class="contact-i fa-solid fa-phone"></i
+                >+44-000-888-999</span
+              >
+            </a>
+            <a href="#">
+              <span
+                ><i class="contact-i fa-solid fa-location-dot"></i>London, 235
+                Tery, 10001</span
+              >
+            </a>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 ps-lg-5 mt-lg-0 mt-sm-5 mt-4 border-left bd-highlight"
+          >
+            <p>ABOUT</p>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, minus quia. Quo, distinctio cum? Beatae iure
+              voluptatem ullam repellat nisi est.</span
+            >
+            <div class="about-i">
+              <a href="#">
+                <i
+                  class="fix-left contact-i br-circle fa-brands fa-facebook-f"
+                ></i>
+              </a>
+              <a href="#">
+                <i class="contact-i br-circle fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="#">
+                <i class="contact-i br-circle fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="contact-i br-circle fa-brands fa-google-plus-g"></i>
+              </a>
+              <a href="#">
+                <i class="contact-i br-circle fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>@2021 Studious. All rights reserved. Design by W3Layouts</p>
       </div>
     </footer>
 
