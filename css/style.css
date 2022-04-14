@@ -16,7 +16,7 @@ html {
   margin-right: auto;
   margin-left: auto;
 }
-.title{
+.title {
   position: relative;
 }
 a {
@@ -34,7 +34,7 @@ a {
 .color-4 {
   background-color: #1ee697;
 }
-.color-5{
+.color-5 {
   color: #ff7971;
 }
 /* Header */
@@ -237,7 +237,7 @@ header {
   right: 1%;
   transform: rotate(90deg);
 }
-.owl-theme .owl-dots .owl-dot span{
+.owl-theme .owl-dots .owl-dot span {
   background-color: #ff7971;
   width: 12px;
   height: 12px;
@@ -261,7 +261,7 @@ header {
   line-height: 28px;
   color: #ffffff;
 }
-.carousel .info .content p:hover{
+.carousel .info .content p:hover {
   color: #000000;
   transition: all 0.5s;
 }
@@ -270,7 +270,7 @@ header {
 }
 
 /* welcome */
-.welcome .content .border-i{
+.welcome .content .border-i {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -278,19 +278,24 @@ header {
   line-height: 70px;
   color: #0d369f;
 }
-.welcome .content span{
+.welcome .content span {
   color: #8b8a87;
 }
-.welcome .content h4{
+.welcome .content h4 {
   margin: 0;
+  color: #000000;
+}
+.welcome .content h4:hover{
+  color: #ff7971;
+  transition: all 0.3s;
 }
 
 /* Course */
-.course{
+.course {
   background-color: #f8f9ff;
 }
 
-.title span::before{
+.title span::before {
   content: "";
   height: 2px;
   width: 60px;
@@ -300,7 +305,7 @@ header {
   background: #707070;
   transform: translateX(-50%);
 }
-.title span::after{
+.title span::after {
   content: "";
   height: 2px;
   width: 60px;
