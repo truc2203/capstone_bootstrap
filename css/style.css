@@ -6,17 +6,18 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  height: 5000px;
-}
 .container {
   max-width: 1520px;
   margin: auto;
+  padding: 0;
 }
 .cover {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
+}
+.title{
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -33,6 +34,9 @@ a {
 .color-4 {
   background-color: #1ee697;
 }
+.color-5{
+  color: #ff7971;
+}
 /* Header */
 header {
   background-color: #ffffff;
@@ -41,6 +45,7 @@ header {
   height: 90px;
   display: grid;
   align-items: center;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
 }
 .fixed-top {
   position: sticky;
@@ -146,6 +151,7 @@ header {
 }
 .d-flex {
   position: relative;
+  flex-wrap: wrap;
 }
 .navbar .d-flex i {
   font-size: 16px;
@@ -185,6 +191,125 @@ header {
   transition: all 0.3s;
 }
 
+/* Carousel */
+.carousel .container {
+  padding: 0;
+}
+.carousel .slide .item {
+  background-image: url(../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+.carousel .slide .item-2 {
+  background-image: url(../img/banner3.jpg);
+}
+.carousel .slide .cover {
+  padding-top: 10%;
+}
+.carousel .slide .cover p {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: bold;
+  width: 48%;
+  line-height: 90px;
+  padding-bottom: 30px;
+}
+.carousel .slide .btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  color: #000000;
+  border-color: transparent;
+}
+.carousel .slide .btn:hover {
+  background-color: #ff7971;
+  color: #ffffff;
+
+  transition: all 0.5s;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 10%;
+  right: 1%;
+  transform: rotate(90deg);
+}
+.owl-theme .owl-dots .owl-dot span{
+  background-color: #ff7971;
+  width: 12px;
+  height: 12px;
+}
+.carousel .info {
+  position: relative;
+  bottom: 60px;
+}
+.carousel .info .content {
+  padding: 50px 35px;
+  position: relative;
+  z-index: 1;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.carousel .info .content p {
+  margin-bottom: 0;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+}
+.carousel .info .content p:hover{
+  color: #000000;
+  transition: all 0.5s;
+}
+.carousel .info .content i {
+  font-size: 40px;
+}
+
+/* welcome */
+.welcome .content .border-i{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e9edf6;
+  line-height: 70px;
+  color: #0d369f;
+}
+.welcome .content span{
+  color: #8b8a87;
+}
+.welcome .content h4{
+  margin: 0;
+}
+
+/* Course */
+.course{
+  background-color: #f8f9ff;
+}
+
+.title span::before{
+  content: "";
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  background: #707070;
+  transform: translateX(-50%);
+}
+.title span::after{
+  content: "";
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  background: #707070;
+  transform: translateX(-15%);
+}
 /* Footer */
 .footer {
   background-color: #060e1f;
@@ -260,82 +385,4 @@ header {
 }
 .footer .d-flex .border-left {
   border-left: 1px solid rgb(64 73 82 / 51%);
-}
-
-/* Carousel */
-.carousel .container {
-  padding: 0;
-}
-.carousel .slide .item {
-  background-image: url(../img/banner2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 700px;
-  position: relative;
-}
-.carousel .slide .item-2 {
-  background-image: url(../img/banner3.jpg);
-}
-.carousel .slide .cover {
-  padding-top: 10%;
-}
-.carousel .slide .cover p {
-  color: #ffffff;
-  font-size: 80px;
-  font-weight: bold;
-  width: 48%;
-  line-height: 90px;
-  padding-bottom: 30px;
-}
-.carousel .slide .btn {
-  font-size: 16px;
-  font-weight: 500;
-  padding: 12px 24px;
-  color: #000000;
-  border-color: transparent;
-}
-.carousel .slide .btn:hover {
-  background-color: #ff7971;
-  color: #ffffff;
-
-  transition: all 0.5s;
-}
-
-.owl-dots {
-  position: absolute;
-  bottom: 10%;
-  right: 1%;
-  transform: rotate(90deg);
-}
-.owl-theme .owl-dots .owl-dot span{
-  /* background-color: #ff7971; */
-  width: 12px;
-  height: 12px;
-}
-.carousel .info {
-  position: relative;
-  bottom: 60px;
-}
-.carousel .info .content {
-  padding: 50px 35px;
-  position: relative;
-  z-index: 1;
-  border-radius: 8px;
-  color: #ffffff;
-}
-.carousel .info .content p {
-  margin-bottom: 0;
-  margin-top: 20px;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 28px;
-  color: #ffffff;
-}
-.carousel .info .content p:hover{
-  color: #000000;
-  transition: all 0.5s;
-}
-.carousel .info .content i {
-  font-size: 40px;
 }
