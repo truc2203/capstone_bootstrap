@@ -137,6 +137,7 @@ header {
   position: absolute;
   right: 10%;
   color: #0d369f;
+  line-height: 50px;
 }
 .d-flex i:hover {
   color: #ff7971;
@@ -186,6 +187,7 @@ header {
   color: #ffffff;
   font-size: 10px;
   padding-right: 6px;
+  line-height: 0;
 }
 .footer .d-flex p {
   font-size: 18px;
