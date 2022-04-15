@@ -22,6 +22,10 @@ html {
 a {
   text-decoration: none;
 }
+.d-flex {
+  position: relative;
+  flex-wrap: wrap;
+}
 .color-1 {
   background-color: #037ef3;
 }
@@ -36,6 +40,15 @@ a {
 }
 .color-5 {
   color: #ff7971;
+}
+.tag-color-1 {
+  background-color: #ffa100;
+}
+.tag-color-2 {
+  background-color: #1dc295;
+}
+.tag-color-3 {
+  background-color: #037ef3;
 }
 /* Header */
 header {
@@ -69,7 +82,7 @@ header {
 .sub-nav a {
   text-decoration: none;
 }
-.sub-nav .container {
+.sub-nav {
   display: flex;
   background-color: #0d369f;
   justify-content: space-between;
@@ -149,10 +162,6 @@ header {
 .nav-link:focus {
   color: #ff7971;
 }
-.d-flex {
-  position: relative;
-  flex-wrap: wrap;
-}
 .navbar .d-flex i {
   font-size: 16px;
   position: absolute;
@@ -160,7 +169,7 @@ header {
   color: #0d369f;
   line-height: 50px;
 }
-.d-flex i:hover {
+.navbar .d-flex i:hover {
   color: #ff7971;
   transition: all 0.3s;
 }
@@ -285,7 +294,7 @@ header {
   margin: 0;
   color: #000000;
 }
-.welcome .content h4:hover{
+.welcome .content h4:hover {
   color: #ff7971;
   transition: all 0.3s;
 }
@@ -314,6 +323,91 @@ header {
   bottom: -16px;
   background: #707070;
   transform: translateX(-15%);
+}
+.course .card {
+  border: none;
+}
+.course .card:hover {
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  transition: all 0.3s;
+}
+.course .card-img img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.course .card .price {
+  position: absolute;
+  right: 10%;
+  bottom: -7%;
+  border-radius: 50%;
+  background-color: #ff6e65;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.course .card .tag {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  display: flex;
+  align-items: center;
+}
+.course .card .tag a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.course .signal span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.course .signal span i {
+  color: #ff6e65;
+}
+.course .vote {
+  border-top: 1px solid #eeeeee;
+}
+.course .vote .star-i {
+  color: #ffc949;
+  font-size: 14px;
+}
+.course .vote a {
+  color: #ff6e65;
+  font-size: 14px;
+  font-weight: 500;
+}
+.course .vote a:hover {
+  color: #0d369f;
+  transition: all 0.5s;
+}
+.course .card-info .card-heading {
+  color: #000000;
+  font-weight: 500;
+}
+.course .card-info .card-heading:hover {
+  color: #ff6e65;
+  transition: all 0.3s;
+}
+.course .course-btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 28px;
+    color: #ffffff;
+    border-color: transparent;
+    background-color: #ff6e65;
+    border-radius: 6px;
+}
+.course .course-btn:hover{
+  background-color: #0d369f;
+  transition: all 0.3s;
 }
 /* Footer */
 .footer {
