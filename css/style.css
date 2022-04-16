@@ -417,11 +417,11 @@ header {
 .service .no-wrap {
   flex-wrap: nowrap;
 }
-.fix-cover{
+.fix-cover {
   margin-left: -16px;
-  margin-right: -16px;  
+  margin-right: -16px;
 }
-.service .icon i{
+.service .icon i {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -429,22 +429,98 @@ header {
   line-height: 70px;
   color: #0d369f;
 }
-.service .info p{
+.service .info p {
   font-size: 22px;
   font-weight: 500;
 }
-.service .info span{
+.service .info span {
   font-size: 16px;
   color: #8b8a87;
 }
 /* data */
-.data .title{
+.data .title {
   margin-bottom: 36px;
 }
-.data .counter-number{
+.data .counter-number {
   font-size: 46px;
   font-weight: 600;
   color: #000000;
+}
+
+/* feedback */
+.box-sh {
+  box-shadow: 0 20px 62px 0 rgb(40 20 69 / 10%);
+}
+.feedback .info {
+  padding: 32px;
+}
+.feedback .text {
+  color: #8b8a87;
+  font-size: 16px;
+}
+.feedback .text span::before {
+  content: " '' ";
+  font-size: 50px;
+  color: #ff7971;
+  font-family: initial;
+  line-height: 16px;
+  padding-top: 8px;
+  padding-right: 4px;
+  display: inline-block;
+}
+.feedback .author-img {
+  padding-right: 16px;
+}
+.feedback .author-text p {
+  font-weight: 600;
+  color: #000000;
+}
+.feedback .author-text span {
+  font-size: 13px;
+  color: #8b8a87;
+}
+
+/* Instructor */
+.instructor .info:hover p{
+  color: #ff6e65;
+  transition: all 0.3s;
+}
+.instructor .info .contact{
+  visibility: hidden;
+  transform: translate(0,78px);
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  padding: 20px;
+}
+.instructor .info:hover .contact{
+  visibility: visible;
+  transform: translate(0,0);
+  transition: all 0.3s;
+}
+.instructor .contact a:hover i{
+  background-color: rgb(255, 255, 255,0.7);
+  transition: all 0.3s;
+}
+.instructor .contact i{
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    line-height: 30px;
+    color: #0d369f;
+    font-size: 14px;
+}
+.instructor .text p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+.instructor .text span{
+  font-size: 13px;
+  color: #8b8a87;
+  font-weight: 400;
 }
 /* Footer */
 .footer {
