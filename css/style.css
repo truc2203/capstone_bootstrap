@@ -396,18 +396,46 @@ header {
   color: #ff6e65;
   transition: all 0.3s;
 }
-.course .course-btn{
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 28px;
-    color: #ffffff;
-    border-color: transparent;
-    background-color: #ff6e65;
-    border-radius: 6px;
+.course .course-btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 28px;
+  color: #ffffff;
+  border-color: transparent;
+  background-color: #ff6e65;
+  border-radius: 6px;
 }
-.course .course-btn:hover{
+.course .course-btn:hover {
   background-color: #0d369f;
   transition: all 0.3s;
+}
+/* Sêrvice */
+.service .bg-service {
+  background: url(../img/bg3.jpg) no-repeat bottom;
+  background-size: cover;
+}
+.service .no-wrap {
+  flex-wrap: nowrap;
+}
+.fix-cover{
+  margin-left: -16px;
+  margin-right: -16px;  
+}
+.service .icon i{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e9edf6;
+  line-height: 70px;
+  color: #0d369f;
+}
+.service .info p{
+  font-size: 22px;
+  font-weight: 500;
+}
+.service .info span{
+  font-size: 16px;
+  color: #8b8a87;
 }
 /* Footer */
 .footer {
