@@ -437,6 +437,15 @@ header {
   font-size: 16px;
   color: #8b8a87;
 }
+/* data */
+.data .title{
+  margin-bottom: 36px;
+}
+.data .counter-number{
+  font-size: 46px;
+  font-weight: 600;
+  color: #000000;
+}
 /* Footer */
 .footer {
   background-color: #060e1f;
