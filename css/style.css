@@ -136,9 +136,7 @@ header {
   color: #ff7971;
   transition: all 0.3s;
 }
-.nav-item {
-  padding: 0 16px;
-}
+
 .nav-link {
   font-size: 16px;
   font-weight: 500;
@@ -417,10 +415,6 @@ header {
 .service .no-wrap {
   flex-wrap: nowrap;
 }
-.fix-cover {
-  margin-left: -16px;
-  margin-right: -16px;
-}
 .service .icon i {
   width: 70px;
   height: 70px;
@@ -687,4 +681,30 @@ header {
 }
 .footer .sub .sub-side .sub-form{
   display: flex;
+}
+
+
+@media screen and (max-width : 1200px) {
+  .cover{
+    max-width: 960px;
+  }
+}
+
+
+@media screen and (max-width : 992px) {
+  .cover{
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .cover{
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .cover{
+    max-width: 100%;
+  }
 }
