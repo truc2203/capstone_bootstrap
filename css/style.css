@@ -841,7 +841,7 @@ header {
     padding-bottom: 48px;
   }
   .carousel .slide .item{
-    width: 500px;
+    height: 450px;
   }
   .carousel .slide .cover p{
     width: 100%;
@@ -883,5 +883,8 @@ header {
   }
   .footer .cover{
     padding-top: 320px;
+  }
+  .carousel .slide .item{
+    height: 400px;
   }
 }
