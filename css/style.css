@@ -6,6 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+.fs-0{
+  font-size: 45px;
+}
 .container {
   max-width: 1520px;
   margin: auto;
@@ -776,16 +779,109 @@ header {
   .footer .d-flex .border-left{
     border-left: none;
   }
+  .owl-dots{
+    bottom: 20%;
+  }
+}
+@media screen and (max-width:991px) {
+  .border-end{
+    border-right: none!important;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .cover {
     max-width: 540px;
   }
+  .fs-0{
+    font-size: 45px!important ;
+  }
+  .pt-sm-32{
+    padding-top: 32px;
+  }
+  .carousel .slide .cover{
+    padding-top: 20%;
+  }
+  .carousel .slide .cover p{
+    font-size: 50px;
+    line-height: 60px;
+    width: 90%;
+  }
+  .sub .sub-side{
+    margin: 0 16px;
+  }
+  .sub .sub-side .d-flex{
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .cover {
     max-width: 100%;
+  }
+  .carousel .cover,
+  .contactus .cover
+  {
+    padding: 0 16px;
+  }
+  .footer .cover{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .wm{
+    width: 100%;
+  }
+  .pt-16{
+    padding-top: 16px;
+  }
+  .pt-32{
+    padding-top: 32px;
+  }
+  .pb-48{
+    padding-bottom: 48px;
+  }
+  .carousel .slide .item{
+    width: 500px;
+  }
+  .carousel .slide .cover p{
+    width: 100%;
+  }
+  .contactus p {
+    font-size: 32px;
+    padding-top: 16px;
+}
+.sub .sub-side{
+  margin: 0 16px;
+}
+.sub .sub-side .d-flex{
+  flex-direction: column;
+}
+.footer .cover{
+  padding-bottom: 40px;
+}
+}
+@media screen and (max-width:475px) {
+  .carousel .slide .cover p {
+    width: 80%;
+}
+.carousel .slide .cover p {
+  font-size: 45px;
+  line-height: 45px;
+}
+  .contactus .cover img{
+    width: 100%;
+  }
+  .footer form{
+    flex-wrap: wrap;
+  }
+  .footer .sub .sub-side input{
+    border-radius: 8px;
+  }
+  .footer .sub .sub-side .sub-btn{
+    width: 100%;
+    border-radius: 8px;
+  }
+  .footer .cover{
+    padding-top: 320px;
   }
 }
