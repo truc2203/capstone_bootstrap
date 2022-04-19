@@ -794,7 +794,7 @@ header {
     max-width: 540px;
   }
   .fs-0{
-    font-size: 45px!important ;
+    font-size: 40px!important ;
   }
   .pt-sm-32{
     padding-top: 32px;
@@ -862,11 +862,11 @@ header {
 }
 @media screen and (max-width:475px) {
   .carousel .slide .cover p {
-    width: 80%;
+    width: 85%;
 }
 .carousel .slide .cover p {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 40px;
+  line-height: 40px;
 }
   .contactus .cover img{
     width: 100%;
