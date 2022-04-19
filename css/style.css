@@ -224,16 +224,18 @@ header {
   background-color: transparent;
   transition: all 0.3s;
 }
-.navbar .menubar-toggler{
+.navbar .menubar
+{
   display: none;
 }
 .navbar .menubar-toggler:active .show-menu{
   display: block;
 
 }
-.navbar .menubar-toggler .night{
+
+.navbar .menubar .menubar-night .night-mode-2{
   padding-right: 12px;
-  font-size: 24px;
+  line-height: 36px;
   color: #0d369f;
   font-size: 22px;
 }
@@ -773,8 +775,8 @@ header {
   .navbar{
     padding: 0;
   }
-  .navbar .menubar-toggler{
-    display: block;
+  .navbar .menubar{
+    display: flex;
   }
   .sub-nav{
     display: none;
