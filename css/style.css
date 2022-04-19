@@ -6,6 +6,21 @@
 html {
   scroll-behavior: smooth;
 }
+body{
+  background-color: #ffffff;
+  transition: all 0.5s;
+}
+
+.dark-mode {
+  background-color: #161c2d;
+  color: #ffffff!important;
+  transition: all 0.5s;
+}
+.btn-mode{
+  border: none;
+    background-color: transparent;
+}
+
 .fs-0{
   font-size: 45px;
 }
@@ -224,11 +239,16 @@ header {
 }
 .show-menu{
   width: 100%;
-  height: 200px;
+  height: 270px;
   background-color: #ffffff;
   left: 0;
   top: 66px;
   display: none;
+  transition: ease 0.5s;
+
+}
+.show-menu .navbar-nav .dropdown-menu{
+  position: absolute;
 }
 .navbar .menubar-toggler .menu{
   color: #ffffff;
@@ -407,6 +427,7 @@ header {
 .course .signal span {
   font-size: 16px;
   font-weight: 500;
+  color: #000000;
 }
 .course .signal span i {
   color: #ff6e65;
@@ -479,7 +500,7 @@ header {
 .data .counter-number {
   font-size: 46px;
   font-weight: 600;
-  color: #000000;
+
 }
 
 /* feedback */
@@ -508,7 +529,7 @@ header {
 }
 .feedback .author-text p {
   font-weight: 600;
-  color: #000000;
+
 }
 .feedback .author-text span {
   font-size: 13px;
@@ -547,6 +568,7 @@ header {
   color: #0d369f;
   font-size: 14px;
 }
+
 .instructor .text p {
   font-size: 20px;
   font-weight: 600;
@@ -664,6 +686,7 @@ header {
   background-color: #040a17;
   color: #c3c3c3;
   font-weight: 400;
+  margin-bottom: 0;
 }
 .footer .d-flex .border-left {
   border-left: 1px solid rgb(64 73 82 / 51%);
