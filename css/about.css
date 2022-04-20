@@ -47,12 +47,12 @@ a {
   transform: translateX(-15%);
 }
 .container {
-  max-width: 1280px;
+  max-width: 1520px;
   margin: auto;
   padding: 0;
 }
 .cover {
-  max-width: 1200px;
+  max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -565,8 +565,20 @@ header {
 }
 
 
+
+@media screen and (max-width:1200px){
+  .cover{
+    max-width: 960px;
+  }
+  .mission .d-flex span,
+  .join .d-flex span{
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
 @media screen and (max-width:992px){
-  .cover {
+
+  .cover{
     max-width: 720px;
   }
   header{
@@ -581,16 +593,60 @@ header {
   .sub-nav{
     display: none;
   }
-}
-@media screen and (min-width:1200px){
+  .carousel{
+    min-height: 250px;
+  }
+  .carousel .thumb{
+    padding-top: 85px;
+  }
+  .data .counter-number{
+    font-size: 36px;
+  }
+  .sub .sub-side{
+    margin: 0 36px;
+  }
 
 }
-@media screen and (min-width:992px){
-
+@media screen and (max-width:991px) {
+  .border-end{
+    border-right: none!important;
+  }
 }
-@media screen and (min-width:768px){
+@media screen and (max-width:768px){
+  .cover{
+    max-width: 540px;
+  }
 
+  .sub .sub-side{
+    margin: 0 16px;
+  }
+  .footer .cover{
+    padding-top: 240px;
+    padding-bottom: 40px;
+  }
 }
-@media screen and (min-width:576px){
-  
+@media screen and (max-width:576px){
+  .cover{
+    max-width: 100%;
+  }
+  .sub .sub-side form{
+    flex-wrap: wrap;
+  }
+  .footer .sub .sub-side input{
+    border-radius: 8px;
+  }
+  .footer .sub .sub-side .sub-btn{
+    width: 100%;
+    border-radius:8px ;
+  }
+  .footer .cover{
+    padding-top: 280px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width:475px){
+  .footer .cover{
+    padding-top: 320px;
+    padding-bottom: 40px;
+  }
 }
