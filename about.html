@@ -28,28 +28,28 @@
   <!-- Sub-nav -->
   <section class="sub-nav">
     <div class="contact">
-      <a  class="color-w" href="#">
+      <a class="color-w" href="#">
         <span>Have any question ? </span>
       </a>
 
-      <a  class="color-w" href="tel:123456789">
+      <a class="color-w" href="tel:123456789">
         <span><i class="hover-none fa-solid fa-phone"></i> +1(23) 234 7896</span>
       </a>
-      <a  class="color-w" href="mailto:mail.exam@gmail.com">
+      <a class="color-w" href="mailto:mail.exam@gmail.com">
         <span><i class="hover-none fa-solid fa-envelope"></i>mail.exam@gmail.com</span>
       </a>
     </div>
     <div class="icon">
-      <a  class="color-w" href="#">
+      <a class="color-w" href="#">
         <i class="fa-brands fa-facebook-f"></i>
       </a>
-      <a  class="color-w" href="#">
+      <a class="color-w" href="#">
         <i class="fa-brands fa-twitter"></i>
       </a>
-      <a  class="color-w" href="#">
+      <a class="color-w" href="#">
         <i class="fa-brands fa-instagram"></i>
       </a>
-      <a  class="color-w" href="#">
+      <a class="color-w" href="#">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
@@ -100,17 +100,18 @@
               <i class="fa-solid fa-magnifying-glass color-pri"></i>
             </form>
             <!-- <button class="btn-mode btn-mode-2" onclick="myFunction()"><i class="change-mode night-mode  fa-solid fa-sun"></i></button> -->
-            <button class="btn-mode" onclick="myFunction()"><i class="night-mode fa-solid fa-moon"></i></button>
+            <button class="btn-mode"><i class="night-mode fa-solid fa-moon"></i></button>
             <!--  -->
           </ul>
         </div>
         <div class="menubar">
           <div class="menubar-night">
-            <button class="btn-mode" onclick="myFunction()"><i class="night-mode-2 fa-solid fa-moon"></i></button>
+            <button class="btn-mode"><i class="night-mode-2 fa-solid fa-moon"></i></button>
           </div>
           <div class="menubar-toggler">
-           <button class="btn-mode" onclick="showMenu()"><i id="icon-close" class="menu fa-solid fa-bars"></i> </button>
-           <div class="show-menu  position-absolute" id="show">
+            <button class="btn-mode" onclick="showMenu()"><i id="icon-close" class="menu fa-solid fa-bars"></i>
+            </button>
+            <div class="show-menu  position-absolute" id="show">
               <ul class="navbar-nav">
                 <li class="nav-item ">
                   <a class="nav-link color-b nav-sub-item active" aria-current="page" href="index.html">HOME</a>
@@ -122,8 +123,8 @@
                   <a class="nav-link color-b" href="course.html">COURSE</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle color-b" href="index.html" id="navbarDropdownMenuLink" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle color-b" href="index.html" id="navbarDropdownMenuLink"
+                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     PAGES
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -187,14 +188,17 @@
           <div class="col-lg-6 col-12 ps-lg-3 pe-lg-5 mt-5 px-3 mt-lg-0">
             <div class="position-relative text-center">
               <img class="w-100 rounded-3" src="./img/about.jpg" alt="">
-              <a class="mission-play position-absolute head-color" href="#playvideo">
+              <button onclick="playVideo()" class="btn-mode color-w mission-play position-absolute" href="">
                 <i class="fa-regular fa-circle-play"></i>
-
-              </a>
+              </button>
               <div id="playvideo">
-                <iframe src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0" frameborder="0"
+                <iframe src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0&autoplay=1" frameborder="0"
                   allow="autoplay"></iframe>
+                  <button onclick="closeVideo()" class="btn-mode color-w fs-3 close-play position-absolute" href="">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
               </div>
+             
             </div>
           </div>
         </div>
@@ -257,7 +261,8 @@
                 <a href="about.html">
                   <h4 class="fs-3 py-4 color-b">Group Seminars</h4>
                 </a>
-                <span class="fs-6 color-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident. Lorem ipsum
+                <span class="fs-6 color-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident.
+                  Lorem ipsum
                   dolor sit</span>
               </div>
             </div>
@@ -268,7 +273,8 @@
                 <a href="about.html">
                   <h4 class="fs-3 py-4 color-b">Trending Course</h4>
                 </a>
-                <span class="fs-6 color-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident. Lorem ipsum
+                <span class="fs-6 color-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident.
+                  Lorem ipsum
                   dolor sit</span>
               </div>
 
@@ -279,7 +285,8 @@
                 <a href="about.html">
                   <h4 class="fs-3 py-4 color-b">Expert Teachers</h4>
                 </a>
-                <span class="fs-6 color-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident. Lorem ipsum
+                <span class="fs-6 color-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident.
+                  Lorem ipsum
                   dolor sit</span>
               </div>
 
@@ -510,145 +517,130 @@
       </div>
     </div>
   </section>
-<!-- Join -->
-<section class="join color-bg">
-  <div class="container pb-5 ">
-    <div class="cover py-md-5 py-4 mb-5">
-      <div class="d-flex align-items-center">
-        <div class="col-lg-6 col-12 px-3 pe-lg-5">
-          <span class="color-b">
-            Join Our Mission to Democratize Education
-          </span>
-          <p class="color-text mt-3 mb-4 fs-6">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
-            ligula. Semper at tempufddfel.</p>
-            <p class="color-b"><i class="pe-2 fa-solid fa-square-check color-5" ></i>Ut enim ad minim veniam</p>
-            <p class="color-b"><i class="pe-2 fa-solid fa-square-check color-5" ></i>Quis nostrud exercitation ullamco laboris</p>
-            <p class="color-b"><i class="pe-2 fa-solid fa-square-check color-5" ></i>Nisi ut aliquip ex ea commodo</p>
-
-        </div>
-        <div class="col-lg-6 col-12 px-3">
-          <div class="position-relative text-center">
-            <img class="w-100 rounded-3" src="./img/about1.jpg" alt="">
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Footer -->
-<footer class="footer position-relative">
-  <div class="sub">
-    <div class="container">
-      <div class="sub-side color-bg">
+  <!-- Join -->
+  <section class="join color-bg">
+    <div class="container pb-5 ">
+      <div class="cover py-md-5 py-4 mb-5">
         <div class="d-flex align-items-center">
-          <div class="wm col-md-6 col-12 px-2">
-            <p class="color-b">Subscribe Us to join our Community</p>
-            <span class="color-text
+          <div class="col-lg-6 col-12 px-3 pe-lg-5">
+            <span class="color-b">
+              Join Our Mission to Democratize Education
+            </span>
+            <p class="color-text mt-3 mb-4 fs-6">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+              ligula. Semper at tempufddfel.</p>
+            <p class="color-b"><i class="pe-2 fa-solid fa-square-check color-5"></i>Ut enim ad minim veniam</p>
+            <p class="color-b"><i class="pe-2 fa-solid fa-square-check color-5"></i>Quis nostrud exercitation ullamco
+              laboris</p>
+            <p class="color-b"><i class="pe-2 fa-solid fa-square-check color-5"></i>Nisi ut aliquip ex ea commodo</p>
+
+          </div>
+          <div class="col-lg-6 col-12 px-3">
+            <div class="position-relative text-center">
+              <img class="w-100 rounded-3" src="./img/about1.jpg" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer position-relative">
+    <div class="sub">
+      <div class="container">
+        <div class="sub-side color-bg">
+          <div class="d-flex align-items-center">
+            <div class="wm col-md-6 col-12 px-2">
+              <p class="color-b">Subscribe Us to join our Community</p>
+              <span class="color-text
             ">Newsletter</span>
-          </div>
-          <div class="wm col-md-6 col-12 px-2">
-            <form action="" class="sub-form">
-              <input type="email" name="email" placeholder="Enter your Email">
-              <button class="sub-btn" type="submit">Send</button>
-            </form>
+            </div>
+            <div class="wm col-md-6 col-12 px-2">
+              <form action="" class="sub-form">
+                <input type="email" name="email" placeholder="Enter your Email">
+                <button class="sub-btn" type="submit">Send</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-  <div class="cover">
-    <div class="d-flex bd-highlight">
-      <div class="wm col-lg-2 col-sm-6 col-12 px-3 ">
-        <p>QUICK LINKS</p>
-        <a href="index.html">
-          <span><i class="fa-solid fa-angles-right"></i>Home</span>
-        </a>
-        <a href="about.html">
-          <span><i class="fa-solid fa-angles-right"></i>About</span>
-        </a>
-        <a href="course.html">
-          <span><i class="fa-solid fa-angles-right"></i>Course</span>
-        </a>
-        <a href="contact.html">
-          <span><i class="fa-solid fa-angles-right"></i>Contact</span>
-        </a>
-      </div>
-      <div class="wm col-lg-3 col-sm-6 col-12 px-3 ">
-        <p>HELP & SUPPORT</p>
-        <a href="index.html">
-          <span><i class="fa-solid fa-angles-right"></i>Live Chart</span>
-        </a>
-        <a href="index.html">
-          <span><i class="fa-solid fa-angles-right"></i>Faq</span>
-        </a>
-        <a href="index.html">
-          <span><i class="fa-solid fa-angles-right"></i>Support</span>
-        </a>
-        <a href="index.html">
-          <span
-            ><i class="fa-solid fa-angles-right"></i>Term of Service</span
-          >
-        </a>
-      </div>
-      <div class="wm col-lg-3 col-sm-6 col-12 px-3 ">
-        <p>CONTACT</p>
-        <a href="mailto:info@exam.com">
-          <span
-            ><i class="contact-i fa-solid fa-envelope"></i
-            >info@exam.com</span
-          >
-        </a>
-        <a href="tel:44000888999">
-          <span
-            ><i class="contact-i fa-solid fa-phone"></i
-            >+44-000-888-999</span
-          >
-        </a>
-        <a href="index.html">
-          <span
-            ><i class="contact-i fa-solid fa-location-dot"></i>London, 235
-            Tery, 10001</span
-          >
-        </a>
-      </div>
-      <div
-        class="wm col-lg-4 col-sm-6 col-12 px-3 "
-      >
-        <p>ABOUT</p>
-        <span
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Dignissimos, minus quia. Quo, distinctio cum? Beatae iure
-          voluptatem ullam repellat nisi est.</span
-        >
-        <div class="about-i">
-          <a href="index.html">
-            <i
-              class="fix-left contact-i br-circle fa-brands fa-facebook-f"
-            ></i>
-          </a>
-          <a href="index.html">
-            <i class="contact-i br-circle fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="index.html">
-            <i class="contact-i br-circle fa-brands fa-twitter"></i>
-          </a>
-          <a href="index.html">
-            <i class="contact-i br-circle fa-brands fa-google-plus-g"></i>
-          </a>
-          <a href="index.html">
-            <i class="contact-i br-circle fa-brands fa-github"></i>
-          </a>
+    <div class="container">
+      <div class="cover">
+        <div class="d-flex bd-highlight">
+          <div class="wm col-lg-2 col-sm-6 col-12 px-3 ">
+            <p>QUICK LINKS</p>
+            <a href="index.html">
+              <span><i class="fa-solid fa-angles-right"></i>Home</span>
+            </a>
+            <a href="about.html">
+              <span><i class="fa-solid fa-angles-right"></i>About</span>
+            </a>
+            <a href="course.html">
+              <span><i class="fa-solid fa-angles-right"></i>Course</span>
+            </a>
+            <a href="contact.html">
+              <span><i class="fa-solid fa-angles-right"></i>Contact</span>
+            </a>
+          </div>
+          <div class="wm col-lg-3 col-sm-6 col-12 px-3 ">
+            <p>HELP & SUPPORT</p>
+            <a href="index.html">
+              <span><i class="fa-solid fa-angles-right"></i>Live Chart</span>
+            </a>
+            <a href="index.html">
+              <span><i class="fa-solid fa-angles-right"></i>Faq</span>
+            </a>
+            <a href="index.html">
+              <span><i class="fa-solid fa-angles-right"></i>Support</span>
+            </a>
+            <a href="index.html">
+              <span><i class="fa-solid fa-angles-right"></i>Term of Service</span>
+            </a>
+          </div>
+          <div class="wm col-lg-3 col-sm-6 col-12 px-3 ">
+            <p>CONTACT</p>
+            <a href="mailto:info@exam.com">
+              <span><i class="contact-i fa-solid fa-envelope"></i>info@exam.com</span>
+            </a>
+            <a href="tel:44000888999">
+              <span><i class="contact-i fa-solid fa-phone"></i>+44-000-888-999</span>
+            </a>
+            <a href="index.html">
+              <span><i class="contact-i fa-solid fa-location-dot"></i>London, 235
+                Tery, 10001</span>
+            </a>
+          </div>
+          <div class="wm col-lg-4 col-sm-6 col-12 px-3 ">
+            <p>ABOUT</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos, minus quia. Quo, distinctio cum? Beatae iure
+              voluptatem ullam repellat nisi est.</span>
+            <div class="about-i">
+              <a href="index.html">
+                <i class="fix-left contact-i br-circle fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="index.html">
+                <i class="contact-i br-circle fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="index.html">
+                <i class="contact-i br-circle fa-brands fa-twitter"></i>
+              </a>
+              <a href="index.html">
+                <i class="contact-i br-circle fa-brands fa-google-plus-g"></i>
+              </a>
+              <a href="index.html">
+                <i class="contact-i br-circle fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="copyright">
+        <p>@2021 Studious. All rights reserved. Design by W3Layouts</p>
+      </div>
     </div>
-  </div>
-  <div class="copyright">
-    <p>@2021 Studious. All rights reserved. Design by W3Layouts</p>
-  </div>
-</div>
-</footer>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -677,32 +669,21 @@
       owl.trigger('stop.owl.autoplay')
     })
   </script>
-  <script>
-    function myFunction() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-    }
-  </script>
 
   <script>
-    function showMenu()
+    function playVideo()
     {
-      var showBtn = document.getElementById("show");
-      var showIcon = document.getElementById("icon-close");
-      if(showBtn.style.display === "none")
-      {
-        showBtn.style.display = "block";
-        showBtn.style.transition = "all 0.5s"
-        showIcon.classList.remove("fa-solid","fa-bars")
-        showIcon.classList.add("fa-solid","fa-xmark")
-
-      }
-      else{
-        showBtn.style.display = "none"
-        showIcon.classList.remove("fa-solid","fa-xmark")
-        showIcon.classList.add("fa-solid","fa-bars")
-        
-      }
+      var playEl = document.getElementById("playvideo")
+      playEl.style.display = "block"
     }
   </script>
+
+  <script>
+    function closeVideo()
+    {
+      var closeEl =document.getElementById("playvideo")
+      closeEl.style.display = "none"
+    }
+  </script>
+  <script src="./Js/showMenu.js"></script>
 </body>
