@@ -884,6 +884,9 @@ header {
     font-size: 40px;
     line-height: 40px;
   }
+  .carousel .slide .item {
+    height: 400px;
+  }
   .contactus .cover img {
     width: 100%;
   }
