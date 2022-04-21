@@ -194,6 +194,11 @@
   }
 }
 @media screen and (max-width: 475px) {
+  .mission .d-flex span,
+  .join .d-flex span {
+    font-size: 28px;
+    line-height: 40px;
+  }
   .footer .cover {
     padding-top: 320px;
     padding-bottom: 40px;
