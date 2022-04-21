@@ -81,8 +81,6 @@ a {
   background-color: #037ef3;
 }
 
-
-
 /* Header */
 #show {
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
@@ -263,8 +261,6 @@ header {
   height: 30px;
   line-height: 32px;
 }
-
-
 
 /* Carousel */
 .carousel .container {
@@ -602,9 +598,6 @@ header {
   transition: all 0.3s;
 }
 
-
-
-
 /* Footer */
 .footer {
   background-color: #060e1f;
@@ -733,9 +726,6 @@ header {
 .footer .sub .sub-side .sub-form {
   display: flex;
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
   .cover {
