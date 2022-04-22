@@ -55,9 +55,7 @@ body {
 a {
   text-decoration: none;
 }
-a:hover{
-  color: transparent;
-}
+
 .d-flex {
   position: relative;
   flex-wrap: wrap;
