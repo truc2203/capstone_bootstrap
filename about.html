@@ -194,7 +194,7 @@
                 <i class="fa-regular fa-circle-play"></i>
               </button>
               <div id="playvideo">
-                <iframe src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0&autoplay=1"
+                <iframe src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0&autoplay=0"
                   frameborder="0" allow="autoplay"></iframe>
                 <button onclick="closeVideo()" class="btn-mode color-w fs-3 close-play position-absolute" href="">
                   <i class="fa-solid fa-xmark"></i>
@@ -654,23 +654,6 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
-  <script>
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      items: 1,
-      loop: true,
-      margin: 0,
-      autoplay: true,
-      autoplayTimeout: 4000,
-      autoplayHoverPause: true
-    });
-    $('.play').on('click', function () {
-      owl.trigger('play.owl.autoplay', [1000])
-    })
-    $('.stop').on('click', function () {
-      owl.trigger('stop.owl.autoplay')
-    })
-  </script>
 
   <script>
     function playVideo() {

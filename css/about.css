@@ -165,7 +165,12 @@
   .cover {
     max-width: 540px;
   }
-
+  .carousel {
+    min-height: 120px;
+}
+.carousel .thumb {
+  padding-top: 36px;
+}
   .sub .sub-side {
     margin: 0 16px;
   }
@@ -177,7 +182,10 @@
 @media screen and (max-width: 576px) {
   .cover {
     max-width: 100%;
-  }
+  } 
+   .carousel {
+    min-height: 150px;
+}
   .sub .sub-side form {
     flex-wrap: wrap;
   }

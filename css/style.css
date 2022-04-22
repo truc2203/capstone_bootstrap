@@ -127,11 +127,11 @@ header {
   font-size: 15px;
   font-weight: 500;
 }
-.sub-nav span:hover {
+.sub-nav a:hover {
   color: #f05196;
   transition: all 0.5s;
 }
-.sub-nav span:hover .hover-none {
+.sub-nav a:hover .hover-none {
   color: #ffffff;
 }
 .sub-nav .contact i {
