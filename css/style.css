@@ -81,8 +81,6 @@ a {
   background-color: #037ef3;
 }
 
-
-
 /* Header */
 #show {
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
@@ -129,11 +127,11 @@ header {
   font-size: 15px;
   font-weight: 500;
 }
-.sub-nav span:hover {
+.sub-nav a:hover {
   color: #f05196;
   transition: all 0.5s;
 }
-.sub-nav span:hover .hover-none {
+.sub-nav a:hover .hover-none {
   color: #ffffff;
 }
 .sub-nav .contact i {
@@ -263,8 +261,6 @@ header {
   height: 30px;
   line-height: 32px;
 }
-
-
 
 /* Carousel */
 .carousel .container {
@@ -602,9 +598,6 @@ header {
   transition: all 0.3s;
 }
 
-
-
-
 /* Footer */
 .footer {
   background-color: #060e1f;
@@ -733,9 +726,6 @@ header {
 .footer .sub .sub-side .sub-form {
   display: flex;
 }
-
-
-
 
 @media screen and (max-width: 1200px) {
   .cover {
@@ -883,6 +873,9 @@ header {
   .carousel .slide .cover p {
     font-size: 40px;
     line-height: 40px;
+  }
+  .carousel .slide .item {
+    height: 400px;
   }
   .contactus .cover img {
     width: 100%;
