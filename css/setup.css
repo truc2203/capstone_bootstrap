@@ -45,7 +45,7 @@ body {
   padding: 0;
 }
 .cover {
-  max-width: 1140px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -54,9 +54,6 @@ body {
 }
 a {
   text-decoration: none;
-}
-a:hover{
-  color: transparent;
 }
 .d-flex {
   position: relative;
@@ -316,6 +313,7 @@ header {
 }
 .carousel .thumb a:hover {
   color: #ffffff;
+  transition: all 0.3s;
 }
 
 /* Footer */
