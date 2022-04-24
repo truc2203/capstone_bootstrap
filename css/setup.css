@@ -55,6 +55,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .d-flex {
   position: relative;
   flex-wrap: wrap;
@@ -223,7 +224,7 @@ header {
 .nav-link:focus {
   color: #ff7971;
 }
-.navbar .d-flex i {
+.navbar .d-flex .btn-search {
   font-size: 16px;
   position: absolute;
   right: 10%;
@@ -272,7 +273,7 @@ header {
   height: 0px;
   background-color: #ffffff;
   left: 0;
-  top: 66px;
+  top: 64px;
   visibility: hidden;
 }
 .show-menu .navbar-nav .dropdown-menu {
