@@ -224,7 +224,7 @@ header {
 .nav-link:focus {
   color: #ff7971;
 }
-.navbar .d-flex i {
+.navbar .d-flex .btn-search {
   font-size: 16px;
   position: absolute;
   right: 10%;
