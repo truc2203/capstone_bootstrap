@@ -148,7 +148,7 @@ header {
 }
 .navbar {
   padding-left: 18px;
-  padding-right: 20px;
+  padding-right: 16px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -179,6 +179,7 @@ header {
   padding: 0 4px;
 }
 .navbar form {
+  width: 230px;
   padding-left: 12px;
 }
 .navbar-nav {
@@ -186,6 +187,7 @@ header {
 }
 .form-control {
   padding: 0.7rem 0.75rem;
+  padding-right: 36px;
 }
 .navbar-nav .night-mode {
   padding-left: 12px;
