@@ -177,7 +177,7 @@ header {
   /* position: fixed;
         width: 100%; */
   padding-left: 18px;
-  padding-right: 20px;
+  padding-right: 16px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -209,12 +209,14 @@ header {
 }
 .navbar form {
   padding-left: 12px;
+  width: 230px;
 }
 .navbar-nav {
   align-items: center;
 }
 .form-control {
   padding: 0.7rem 0.75rem;
+  padding-right: 36px;
 }
 .navbar-nav .night-mode {
   padding-left: 12px;
@@ -446,3 +448,10 @@ header {
 .footer .sub .sub-side .sub-form {
   display: flex;
 }
+/* 
+@media screen and (max-width:992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none!important;
+  
+  }
+} */
