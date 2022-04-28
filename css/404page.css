@@ -1,0 +1,77 @@
+.main-page{
+    background: url(../img/error.jpg) no-repeat bottom;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding: 70px 0px;
+}
+.main-page::before{
+    content: "";
+    background: linear-gradient(75deg, rgb(16 16 16 / 62%) 10%, rgb(230 2 100 / 0%));
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.main-page h1{
+    font-size: 160px;
+    font-weight: 500;
+}
+.main-page p{
+    font-size: 28px;
+    font-weight: 300;
+}
+.main-page input{
+    width: 420px;
+    padding: 14px 50px 14px 20px;
+    font-size: 16px;
+    border: 2px solid rgb(255 255 255 / 29%);
+    border-radius: 35px;
+    background: #fff;
+}
+.main-page a{
+    color: #ffffff;
+    transition: all 0.5s;
+}
+.main-page a:hover{
+    color: #ff7971;
+    transition: all 0.5s;
+}
+.btn-404{
+    color: #ff7971;
+    right: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    .cover {
+      max-width: 960px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .cover {
+      max-width: 720px;
+    }
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cover {
+      max-width: 540px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .cover {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 475px) {
+    .main-page h1{
+        font-size: 120px;
+    }
+    .main-page input{
+        width: 80vw;
+    }
+  }
