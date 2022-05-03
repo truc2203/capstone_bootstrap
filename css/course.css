@@ -1,0 +1,238 @@
+/* Course */
+.course {
+  padding-bottom: 100px;
+}
+.title span::before {
+  content: "";
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  background: #707070;
+  transform: translateX(-50%);
+}
+.title span::after {
+  content: "";
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -16px;
+  background: #707070;
+  transform: translateX(-15%);
+}
+.course .card {
+  border: none;
+}
+.course .card-info {
+  border: 1px solid #f0f0f0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.course .card:hover {
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  transition: all 0.3s;
+}
+.course .card-img img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.course .card .price {
+  position: absolute;
+  right: 10%;
+  bottom: -7%;
+  border-radius: 50%;
+  background-color: #ff6e65;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.course .card .tag {
+  position: absolute;
+  top: 8%;
+  left: 8%;
+  display: flex;
+  align-items: center;
+}
+.course .card .tag a {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.course .signal span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.course .signal span i {
+  color: #ff6e65;
+}
+.course .vote {
+  border-top: 1px solid #eeeeee;
+}
+.course .vote .star-i {
+  color: #ffc949;
+  font-size: 14px;
+}
+.course .vote a {
+  color: #ff6e65;
+  font-size: 14px;
+  font-weight: 500;
+}
+.course .vote a:hover {
+  color: #0d369f;
+  transition: all 0.5s;
+}
+.course .card-info .card-heading {
+  font-weight: 500;
+}
+.course .card-info .card-heading:hover {
+  color: #ff6e65;
+  transition: all 0.3s;
+}
+.course .course-btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 28px;
+  border-color: transparent;
+  background-color: #ff6e65;
+  border-radius: 6px;
+}
+.course .course-btn:hover {
+  background-color: #0d369f;
+  transition: all 0.3s;
+}
+
+/* pagination */
+.page-link {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50%;
+  padding: 8px 16px;
+  width: 40px;
+  height: 40px;
+}
+.page-item {
+  padding: 8px;
+}
+.page-link:focus {
+  box-shadow: none;
+  background-color: transparent;
+  color: #000000;
+}
+.page-link:hover {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #ff6e65;
+  border-radius: 50%;
+  border-color: transparent;
+}
+.first-page {
+  background-color: #ff6e65;
+}
+.page-item:first-child .page-link {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  padding-top: 7px;
+}
+.page-item:first-child:hover .page-link {
+  background-color: transparent;
+  color: #8b8a87;
+  cursor: no-drop;
+}
+.page-item:last-child .page-link {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 1200px) {
+  .cover {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .cover {
+    max-width: 720px;
+  }
+  header {
+    height: 70px;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar .menubar {
+    display: flex;
+  }
+  .sub-nav {
+    display: none;
+  }
+  .carousel {
+    min-height: 250px;
+  }
+  .carousel .thumb {
+    padding-top: 85px;
+  }
+  .sub .sub-side {
+    margin: 0 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    max-width: 540px;
+  }
+  .carousel {
+    min-height: 120px;
+  }
+  .carousel .thumb {
+    padding-top: 36px;
+  }
+  .sub .sub-side {
+    margin: 0 16px;
+  }
+  .footer .cover {
+    padding-top: 240px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cover {
+    max-width: 100%;
+  }
+  .carousel {
+    min-height: 150px;
+  }
+  .sub .sub-side form {
+    flex-wrap: wrap;
+  }
+  .footer .sub .sub-side input {
+    border-radius: 8px;
+  }
+  .footer .sub .sub-side .sub-btn {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .footer .cover {
+    padding-top: 280px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .footer .cover {
+    padding-top: 320px;
+    padding-bottom: 40px;
+  }
+}

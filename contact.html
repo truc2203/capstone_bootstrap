@@ -20,6 +20,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="../css/setup.css" />
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 
 <body>
@@ -53,7 +54,8 @@
         </div>
     </section>
     <!-- Navbar -->
-    <header id="header" class="fixed-top nav-fixed color-bg">
+    <!-- Navbar -->
+    <header id="header" class="fixed-top nav-fixed">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid  position-relative">
                 <a class="navbar-brand color-pri" href="index.html">
@@ -67,7 +69,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link nav-sub-item active" aria-current="page" href="index.html">HOME</a>
+                            <a class="nav-link color-b nav-sub-item active" aria-current="page"
+                                href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link color-b" href="about.html">ABOUT US</a>
@@ -80,14 +83,14 @@
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 PAGES
                             </a>
-                            <ul class="dropdown-menu color-bg" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item color-b" href="#">BLOG POST</a></li>
-                                <li><a class="dropdown-item color-b" href="#">BLOG SIGNLE</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="pages-blogpost.html">BLOG POST</a></li>
+                                <li><a class="dropdown-item" href="pages-blogsingle.html">BLOG SIGNLE</a></li>
                                 <li>
-                                    <a class="dropdown-item color-b" href="#">404 PAGE</a>
+                                    <a class="dropdown-item" href="404page.html">404 PAGE</a>
                                 </li>
-                                <li><a class="dropdown-item color-b" href="#">EMAIL TEMPLATE</a></li>
-                                <li><a class="dropdown-item color-b" href="#">LANDING PAGE</a></li>
+                                <li><a class="dropdown-item" href="#">EMAIL TEMPLATE</a></li>
+                                <li><a class="dropdown-item" href="landingpage.html">LANDING PAGE</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -95,8 +98,8 @@
                         </li>
                         <form class="d-flex">
                             <input class="rounded-pill form-control me-2" type="search" placeholder="Enter keyword"
-                                aria-label="Search" />
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                                aria-label="Search" required="required" />
+                            <button class="btn-search btn-mode"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                         <!-- <button class="btn-mode btn-mode-2" onclick="myFunction()"><i class="change-mode night-mode  fa-solid fa-sun"></i></button> -->
                         <button class="btn-mode"><i class="night-mode fa-solid fa-moon"></i></button>
@@ -107,11 +110,11 @@
                     <div class="menubar-night">
                         <button class="btn-mode"><i class="night-mode-2 fa-solid fa-moon"></i></button>
                     </div>
-                    <div class="menubar-toggler ">
+                    <div class="menubar-toggler">
                         <button class="btn-mode" onclick="showMenu()"><i id="icon-close"
-                                class="menu fa-solid fa-bars"></i></button>
-                        <div class="show-menu position-absolute" id="show">
-
+                                class="menu fa-solid fa-bars"></i>
+                        </button>
+                        <div class="show-menu  position-absolute" id="show">
                             <ul class="navbar-nav">
                                 <li class="nav-item ">
                                     <a class="nav-link color-b nav-sub-item active" aria-current="page"
@@ -124,19 +127,22 @@
                                     <a class="nav-link color-b" href="course.html">COURSE</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link color-b dropdown-toggle" href="index.html"
+                                    <a class="nav-link dropdown-toggle color-b" href="index.html"
                                         id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         PAGES
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">BLOG POST</a></li>
-                                        <li><a class="dropdown-item" href="#">BLOG SIGNLE</a></li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">404 PAGE</a>
+                                        <li><a class="dropdown-item color-b" href="pages-blogpost.html">BLOG POST</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">EMAIL TEMPLATE</a></li>
-                                        <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                                        <li><a class="dropdown-item color-b" href="pages-blogsingle.html">BLOG
+                                                SIGNLE</a></li>
+                                        <li>
+                                            <a class="dropdown-item color-b" href="404page.html">404 PAGE</a>
+                                        </li>
+                                        <li><a class="dropdown-item color-b" href="#">EMAIL TEMPLATE</a></li>
+                                        <li><a class="dropdown-item color-b" href="landingpage.html">LANDING PAGE</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -144,8 +150,9 @@
                                 </li>
                                 <form class="d-flex">
                                     <input class="rounded-pill form-control me-2" type="search"
-                                        placeholder="Enter keyword" aria-label="Search" />
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                        placeholder="Enter keyword" aria-label="Search" required="required" />
+                                    <button class="btn-search btn-mode"><i
+                                            class="fa-solid fa-magnifying-glass"></i></button>
                                 </form>
                                 <!-- <i class="change-mode night-mode  fa-solid fa-sun"></i> -->
                             </ul>
@@ -165,19 +172,109 @@
         <div class="thumb">
             <div class="container"></div>
             <div class="cover px-3">
-                <p class="color-w">Blog Post</p>
+                <p class="color-w">Contact Us</p>
                 <div>
                     <a class="color-text fs-6" href="index.html">Home</a>
                     <i class="color-text px-2 fs-6 fa-solid fa-angle-right"></i>
-                    <span class="color-text fs-6">Blog Pages</span>
+                    <span class="color-text fs-6">Contact us</span>
                 </div>
             </div>
 
         </div>
     </section>
 
+
+    <!--Map  -->
+    <section class="getintouch">
+        <div class="container py-5">
+            <div class="cover py-md-5 py-4">
+                <div class="main-box mx-auto">
+                    <!-- Map -->
+                    <div class="d-flex">
+                        <div class="col-md-5 col-12 px-3">
+                            <h3 class="mb-5 color-b">Get in touch with us</h3>
+                            <div class="d-flex flex-nowrap">
+                                <div class="icon-map me-3 text-center">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <div class="content-map ">
+                                    <p class="color-b mb-2">Company Addess</p>
+                                    <span class="color-text">10001, 5th Avenue, 12202 street, London.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4 pt-2">
+                                <div class="icon-map me-3">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="content-map">
+                                    <p class="color-b mb-2">Call Us</p>
+                                    <a href="tel:1211127368"><span class="color-text">+1(21) 112 7368
+                                        </span></a>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4 pt-2">
+                                <div class="icon-map me-3">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="content-map">
+                                    <p class="color-b mb-2">Email Us</p>
+                                    <a href="mailto:exam@gmail.com"><span class="color-text">example@mail.com
+                                        </span></a>
+                                </div>
+                            </div>
+                            <div class="d-flex mt-4 pt-2">
+                                <div class="icon-map me-3">
+                                    <i class="fa-solid fa-headphones"></i>
+                                </div>
+                                <div class="content-map">
+                                    <p class="color-b mb-2">Customer Support</p>
+                                    <a href="mailto:info@gmail.com"><span class="color-text">info@support.com
+                                        </span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-12 px-3 pt-4 pt-md-0">
+                            <div class="mapview box-sh">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15674.554475990137!2d106.6705146!3d10.8389431!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529bcea4aa809%3A0x1518e8cd775355f9!2zTcOsIGNheSBTYXNpbiBHw7IgVuG6pXA!5e0!3m2!1sen!2s!4v1648044965616!5m2!1sen!2s"
+                                    style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Question -->
+                    <div class="question pt-5 mt-md-5">
+                        <div class="title text-center mb-4">
+                            <span class="fs-0 fs-1 color-b" style="font-weight: 600;">We will Answer all your <span
+                                    class="color-5">
+                                    Questions</span></span>
+                        </div>
+                        <div class="d-flex pt-5 align-items-center">
+                            <div class="col-md-5 col-12 px-3">
+                                <img class="w-100 rounded-3" src="./img/contact.jpg" alt="">
+                            </div>
+                            <div class="col-md-7 col-12 px-3 mt-4 mt-md-0">
+                                <form action="" class="signin-form">
+                                    <input class="text-input" type="text" placeholder="Your Name*" required>
+                                    <input class="text-input" type="email" placeholder="Your Email*" required>
+                                    <input class="text-input" type="text" placeholder="Subject*" required>
+                                    <textarea class="text-input" name="" id="" cols="30" rows="4"
+                                        placeholder="Type your message here*" required></textarea>
+                                        <div class="input-form mt-3">
+                                            <button class="submit-btn color-w">Send Message</button>
+                                        </div>
+                                </form>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Footer -->
-    <footer class="footer position-relative" style="display: none;">
+    <footer class="footer position-relative">
         <div class="sub">
             <div class="container">
                 <div class="sub-side color-bg">
