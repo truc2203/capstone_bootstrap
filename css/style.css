@@ -499,7 +499,7 @@ header {
   box-shadow: 0 20px 62px 0 rgb(40 20 69 / 10%);
 }
 .feedback .info {
-  padding: 32px;
+  padding: 24px;
 }
 .feedback .text {
   color: #8b8a87;
@@ -791,8 +791,6 @@ header {
   .owl-dots {
     bottom: 20%;
   }
-}
-@media screen and (max-width: 991px) {
   .border-end {
     border-right: none !important;
   }
@@ -804,9 +802,6 @@ header {
   }
   .fs-0 {
     font-size: 40px !important ;
-  }
-  .pt-sm-32 {
-    padding-top: 32px;
   }
   .carousel .slide .cover {
     padding-top: 20%;
