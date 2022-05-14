@@ -572,10 +572,7 @@ header {
 .contactus {
   padding-bottom: 8%;
 }
-.contactus .d-flex {
-  flex-wrap: nowrap;
-  width: 100%;
-}
+
 .contactus a {
   color: #ffffff;
 }
@@ -681,7 +678,7 @@ header {
 
 .sub .sub-side {
   padding: 50px;
-  max-width: 1000px;
+  max-width: 980px;
   margin: 0 auto;
   border-radius: 10px;
   background: #ffffff;
@@ -746,7 +743,16 @@ header {
   }
 }
 
+
 @media screen and (max-width: 992px) {
+  .navbar-expand-lg .navbar-collapse
+   {
+    display: none !important;
+    flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+}
   .cover {
     max-width: 720px;
   }
@@ -794,6 +800,46 @@ header {
   .border-end {
     border-right: none !important;
   }
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.pt-md-3 {
+  padding-top: 1rem!important;
+}
+.px-md-3 {
+  padding-right: 1rem!important;
+  padding-left: 1rem!important;
+}
+.pb-sm-3 {
+  padding-bottom: 1rem!important;
+}
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+.pt-md-4 {
+  padding-top: 1.5rem!important;
+}
+.footer .col-sm-6 {
+  flex: 0 0 auto;
+  width: 50%;}
+.footer .mt-sm-5 {
+   margin-top: 3rem!important; 
+}
+.footer .ps-lg-5 {
+  padding-left: 0 !important;
+}
+.welcome .pt-sm-4 {
+  padding-top: 1.5rem!important;
+}
+.instructor .pt-0 {
+  padding-top:1.5rem !important;
+}
+.contactus .col-lg-7 {
+  flex: 0 0 auto;
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -817,6 +863,14 @@ header {
   .sub .sub-side .d-flex {
     flex-direction: column;
   }
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .course .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -830,18 +884,6 @@ header {
   .footer .cover {
     padding-left: 16px;
     padding-right: 16px;
-  }
-  .wm {
-    width: 100%;
-  }
-  .pt-16 {
-    padding-top: 16px;
-  }
-  .pt-32 {
-    padding-top: 32px;
-  }
-  .pb-48 {
-    padding-bottom: 48px;
   }
   .carousel .slide .item {
     height: 450px;
@@ -862,6 +904,36 @@ header {
   .footer .cover {
     padding-bottom: 40px;
   }
+ .col-sm-12{
+    flex:0 0 auto;
+    width: 100%;
+  }
+  .pt-sm-4{
+    padding-top: 1.5rem;
+  }
+  .pb-sm-4 {
+    padding-bottom: 1.5rem!important;
+}
+.footer .col-sm-6 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.footer .mt-sm-5 {
+  margin-top: 0 !important; 
+}
+.feedback .col-md-6 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+.feedback .pt-md-4 {
+  padding-top: 0!important;
+}
+.feedback .pt-md-3 {
+  padding-top: 3rem!important;
+}
+.carousel .pt-0{
+  padding-top: 1rem!important;
+}
 }
 @media screen and (max-width: 475px) {
   .carousel .slide .cover p {

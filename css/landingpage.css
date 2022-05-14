@@ -61,4 +61,15 @@
   .getintouch {
     padding-bottom: 20%;
   }
+  .getintouch .col-md-5,
+  .getintouch .col-md-7 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .getintouch .pt-4 {
+    padding-top: 1.5rem!important;
+}
+.getintouch .mt-4 {
+  margin-top: 1.5rem!important;
+}
 }
