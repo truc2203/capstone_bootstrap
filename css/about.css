@@ -125,6 +125,13 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: none !important;
+    flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: column;
+  }
   .cover {
     max-width: 720px;
   }
@@ -155,22 +162,70 @@
   .sub .sub-side {
     margin: 0 36px;
   }
-}
-@media screen and (max-width: 991px) {
+  .footer .col-sm-12 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .footer .d-flex .border-left {
+    border-left: none;
+  }
   .border-end {
     border-right: none !important;
   }
+  .footer .ps-lg-5 {
+    padding-left: 0 !important;
+  }
+  .footer .mt-sm-5 {
+    margin-top: 3rem !important;
+  }
+  .mission .col-lg-6,
+  .join .col-lg-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .mission .mt-5 {
+    margin-top: 3rem !important;
+  }
+  .mission .px-3 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .data .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .data .pt-sm-4 {
+    padding-top: 1.5rem !important;
+  }
+  .welcome .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .welcome .mt-4 {
+    margin-top: 1.5rem !important;
+  }
+  .instructor .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .instructor .mt-sm-5 {
+    margin-top: 3rem !important;
+  }
+  .instructor .pt-sm-0 {
+    padding-top: 0!important;
 }
+}
+
 @media screen and (max-width: 768px) {
   .cover {
     max-width: 540px;
   }
   .carousel {
     min-height: 120px;
-}
-.carousel .thumb {
-  padding-top: 36px;
-}
+  }
+  .carousel .thumb {
+    padding-top: 36px;
+  }
   .sub .sub-side {
     margin: 0 16px;
   }
@@ -178,14 +233,19 @@
     padding-top: 240px;
     padding-bottom: 40px;
   }
+  .welcome .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
 }
+
 @media screen and (max-width: 576px) {
   .cover {
     max-width: 100%;
-  } 
-   .carousel {
+  }
+  .carousel {
     min-height: 150px;
-}
+  }
   .sub .sub-side form {
     flex-wrap: wrap;
   }
@@ -200,6 +260,34 @@
     padding-top: 280px;
     padding-bottom: 40px;
   }
+  .data .col-sm-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .data .mt-4 {
+    margin-top: 1.5rem !important;
+  }
+  .data .pt-sm-4 {
+    padding-top: 0 !important;
+  }
+  .instructor .col-sm-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .instructor .mt-0 {
+    margin-top: 3rem !important;
+  }
+  .footer .cover {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .footer .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .footer .mt-sm-5 {
+    margin-top: 0 !important;
+  }
 }
 @media screen and (max-width: 475px) {
   .mission .d-flex span,
@@ -210,5 +298,8 @@
   .footer .cover {
     padding-top: 320px;
     padding-bottom: 40px;
+  }
+  .footer .pt-5 {
+    padding-top: 0 !important;
   }
 }
